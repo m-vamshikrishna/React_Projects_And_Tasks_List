@@ -90,12 +90,6 @@ function App() {
   const selectedProject = projectState.project.find(
     (project) => project.id === projectState.selectedProject
   );
-  // let selectedTasks = projectState.tasks.find(
-  //   (eachTask) => eachTask.projectId === projectState.selectedProject
-  // );
-  // if (selectedTasks === undefined) {
-  //   selectedTasks = [];
-  // }
   let content = (
     <SelectedProject
       project={selectedProject}
